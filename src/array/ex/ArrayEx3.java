@@ -2,7 +2,7 @@ package array.ex;
 
 import java.util.Scanner;
 
-public class ArrayEx2 {
+public class ArrayEx3 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int[] num = new int[5];
@@ -13,14 +13,13 @@ public class ArrayEx2 {
             num[i] = scanner.nextInt();
         }
 
-        System.out.println("출력");
+        System.out.println("입력한 정수를 역순으로 출력:");
 
-        for (int i = 0; i < num.length; i++) {
+        for (int i = num.length - 1; i >= 0; i--) {
             System.out.print(num[i]);
-            if (i < num.length - 1) {
+            if (i > 0) {
                 System.out.print(", ");
             }
-
         }
     }
 }
