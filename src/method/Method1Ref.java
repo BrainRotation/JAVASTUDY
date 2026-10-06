@@ -9,6 +9,8 @@ public class Method1Ref {
         //계산2
         int sum2 = add(15, 20);
         System.out.println("결과2 출력: " + sum2);
+
+        add(100, 200);
     }
 
     public static int add(int a, int b) { //int는 숫자형을 반환하는 것. 메서드 선언. 메서드 이름, 반환 타입, 파라미터 목록
