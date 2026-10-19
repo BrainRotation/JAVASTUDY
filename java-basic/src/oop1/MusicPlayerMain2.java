@@ -4,8 +4,7 @@ public class MusicPlayerMain2 {
     public static void main(String[] args) {
         MusicPlayerData data = new MusicPlayerData();
 
-        data.isOn = true;
-        System.out.println("음악 플레이어를 시작합니다.");
+
 
         //볼륨 증가
         data.volume++;
@@ -27,4 +26,12 @@ public class MusicPlayerMain2 {
             System.out.println("음악 플레이어 OFF");
         }
     }
-}
+
+    static void on(MusicPlayerData data){
+        data.isOn = true;
+        System.out.println("음악 플레이어를 시작합니다.");
+    }
+    static void off(MusicPlayerData data){
+        data.isOn = false;
+        System.out.println("음악 플레이어를 시작합니다.");
+    }
